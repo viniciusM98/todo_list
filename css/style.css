@@ -19,6 +19,10 @@ input, button{
   outline: 0;
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 .holder{
   padding: 0 20px;
 }
@@ -48,4 +52,38 @@ h1{
 
 .fa-plus-square{
   font-size: 40px;
+}
+
+.set{
+  display: flex;
+  margin: 50px auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgb(255,255,255);
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
+}
+
+.card h2{
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card ul li{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background: #e5eff7;
+  list-style: none;
 }
