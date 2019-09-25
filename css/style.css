@@ -42,18 +42,6 @@ h1{
   align-content: center;
 }
 
-.input{
-  border: 1px solid #e6ecf0;
-  height: 40px;
-  padding: 0 10px;
-  width: 350px;
-  margin-right: 10px;
-}
-
-.fa-plus-square{
-  font-size: 40px;
-}
-
 .set{
   display: flex;
   margin: 50px auto;
@@ -86,4 +74,16 @@ h1{
   border-radius: 20px;
   background: #e5eff7;
   list-style: none;
+}
+
+.input{
+  border: 1px solid #e6ecf0;
+  height: 40px;
+  padding: 0 10px;
+  width: 350px;
+  margin-right: 10px;
+}
+
+.fa-plus-square{
+  font-size: 40px;
 }
