@@ -23,9 +23,48 @@ const addButton = document.querySelector('#addButton')
 
     localStorage.setItem('lista', JSON.stringify(listasTransformadas))
 }*/
-const transitarDoing = (item) => {
+
+/*const transitarDone = (dItem) => {
+  doingCard.removeChild(dItem)
+  doneCard.appendChild(dItem)
+}*/
+
+const excluirItem = (eItem) => {
+  doneCard.removeChild(eItem)
+}
+
+const transitarDone = (dItem, t) => {
+  const li = document.createElement('li')
+  const btExclude = document.createElement('i')
+  const button = document.createElement('button')
+
+  doingCard.removeChild(dItem)
+
+  btExclude.setAttribute('class', 'fas fa-times-circle')
+
+  button.appendChild(btExclude)
+  button.onclick = () => excluirItem(li)
+
+  li.append(t, button)
+
+  doneCard.appendChild(li)
+}
+
+const transitarDoing = (item, trf) => {
+  const li = document.createElement('li')
+  const btNext = document.createElement('i')
+  const button = document.createElement('button')
+
   todoCard.removeChild(item)
-  doingCard.appendChild(item)
+
+  btNext.setAttribute('class', 'fas fa-chevron-circle-right')
+
+  button.appendChild(btNext)
+  button.onclick = () => transitarDone(li, trf)
+
+  li.append(trf, button)
+
+  doingCard.appendChild(li)
 }
 
 const criarItem = (tarefa) => {
@@ -37,7 +76,7 @@ const criarItem = (tarefa) => {
 
   button.appendChild(btNext)
 
-  button.onclick = () => transitarDoing(li)
+  button.onclick = () => transitarDoing(li, tarefa)
 
   inputToDo.textContent = tarefa
 
