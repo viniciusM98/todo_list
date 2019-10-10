@@ -1,5 +1,7 @@
 const listas = document.querySelectorAll('ul')
 const todoCard = document.querySelector('#todo')
+const doingCard = document.querySelector('#doing')
+const doneCard = document.querySelector('#done')
 const inputToDo = document.querySelector('#tarefa')
 const addButton = document.querySelector('#addButton')
 //const nextButton = document.querySelector("#nextBt")
@@ -22,7 +24,8 @@ const addButton = document.querySelector('#addButton')
     localStorage.setItem('lista', JSON.stringify(listasTransformadas))
 }*/
 const transitarDoing = (item) => {
-  
+  todoCard.removeChild(item)
+  doingCard.appendChild(item)
 }
 
 const criarItem = (tarefa) => {
