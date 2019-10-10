@@ -12,33 +12,40 @@
     <section class="holder">
       <h1>Todo App</h1>
       <div class="add">
-        <input type="text" class="input" name="todo" placeholder="Adicione um novo todo"/>
-        <button><i class="fas fa-plus-square"></i></button>
+        <input id="tarefa" type="text" class="input" placeholder="Adicione um novo todo"/>
+        <button id="addButton"><i class="fas fa-plus-square"></i></button>
       </div>
     </section>
     <section class="set">
       <div class="card">
         <h2>To Do</h2>
-        <ul>
-          <li>Revisar HTML e CSS <button><i class="fas fa-chevron-circle-right"></i></button></li>
-          <li>Fazer a o Todo App <button><i class="fas fa-chevron-circle-right"></i></button></li>
-          <li>Postar meu código no GitHub <button><i class="fas fa-chevron-circle-right"></i></button></li>
-          <li>Ir na aula de JS <button><i class="fas fa-chevron-circle-right"></i></button></li>
+        <ul id="todo">
+          <!--
+            <li>Revisar HTML e CSS <button id="nextBt"><i class="fas fa-chevron-circle-right"></i></button></li>
+            <li>Fazer a o Todo App <button id="nextBt"><i class="fas fa-chevron-circle-right"></i></button></li>
+            <li>Postar meu código no GitHub <button id="nextBt"><i class="fas fa-chevron-circle-right"></i></button></li>
+            <li>Ir na aula de JS <button id="nextBt"><i class="fas fa-chevron-circle-right"></i></button></li>
+          -->
         </ul>
       </div>
       <div class="card">
         <h2>Doing</h2>
-        <ul>
-          <li>Ir na aula de HTML e CSS <button><i class="fas fa-chevron-circle-right"></i></button></li>
+        <ul id="doing">
+          <!--
+            <li>Ir na aula de HTML e CSS <button><i class="fas fa-chevron-circle-right"></i></button></li>
+          -->
         </ul>
       </div>
       <div class="card">
         <h2>Done</h2>
-        <ul>
-          <li>Ir na reunião de projetos <button><i class="fas fa-times-circle"></i></button></li>
-          <li>Ir na aula de Git <button><i class="fas fa-times-circle"></i></button></li></li>
+        <ul id="done">
+          <!--
+            <li>Ir na reunião de projetos <button><i class="fas fa-times-circle"></i></button></li>
+            <li>Ir na aula de Git <button><i class="fas fa-times-circle"></i></button></li></li>
+          -->
         </ul>
       </div>
     </section>
+    <script src='js/script.js'></script>
   </body>
 </html>
